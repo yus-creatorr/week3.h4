@@ -1,0 +1,10 @@
+﻿// List<Person> people = new List<Person>();
+// Student student = new Student("Jura");
+// Teacher teacher = new Teacher("Mahmud");
+// people.Add(student);
+// people.Add(teacher);
+// student.Study();
+// teacher.Explain();
+Dog dog = new Dog();
+dog.SetName("Tobby");
+dog.Eat();
