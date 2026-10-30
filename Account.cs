@@ -1,7 +1,25 @@
 public class Account
 {
-    public virtual void Post()
+     public string name;
+     double balance;
+
+    public Account(string name, double balance)
     {
-        System.Console.WriteLine("Post created");
+        this.name = name;
+        this.balance = balance;
+    }
+    public void Withdraw(double amount)
+    {
+        balance -= amount;
+    }
+
+    public void Deposit(double amount)
+    {
+        balance += amount;
+    }
+
+    public override string ToString()
+    {
+        return balance.ToString();
     }
 }

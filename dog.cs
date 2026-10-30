@@ -1,11 +1,18 @@
-public class Dog : Animal
+public class Dog
 {
-    public Dog()
+    private string name;
+    private string breed;
+    private int age;
+
+    public Dog(string name, string breed, int age)
     {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
     }
 
-    public override void Eat()
+    public void PrintInfo()
     {
-        System.Console.WriteLine("The Dog Eating");
+        Console.WriteLine($"Ном: {name}, Зот: {breed}, Синну сол: {age} сола");
     }
 }
